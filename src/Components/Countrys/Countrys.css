@@ -3,3 +3,9 @@
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
 }
+.visited{
+    background-color: #646cff;
+}
+.nonVisited{
+    background-color: #f9b05d;
+}
