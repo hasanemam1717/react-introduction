@@ -15,14 +15,14 @@ const Country = ({country,handleVisitedCountries}) => {
     console.log(handleVisitedCountries)
     return (
         <div className={`country ${Visited ? 'visited':'nonVisited'}`}>
-            <h1 style={{color:Visited?'purple':'white'}}>Name: {name.common}</h1>
+            <h5 style={{color:Visited?'purple':'white'}}>Name: {name.common}</h5>
             <img src={flags.png} alt="" />
-            <h1>Popolation : {population}</h1>
-            <h1>Area : {area}</h1>
-            <h1>Code : {cca3}</h1>
+            <h5>Popolation : {population}</h5>
+            <h5>Area : {area}</h5>
+            <h5>Code : {cca3}</h5>
             <button onClick={passPerams}>Mark visited</button> &nbsp;&nbsp;
             <button onClick={handleVIsited}>{Visited ? 'visited':'Going'}</button>
-            {Visited ? <h1>I have visited this country.</h1>: 'I want to visit this country'}
+            {Visited ? <h5>I have visited this country.</h5>: 'I want to visit this country'}
         </div>
     );
 };
